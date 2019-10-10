@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: #ffffff;
+  width: 100%;
+  margin: auto;
+}
+.header nav.navbar{
+  width: 100%;
+  margin: auto;
+}
+.header nav.navbar a.navbar-brand {
+  color: #5AB41D !important;
+}
+.header nav.navbar ul.navbar-nav {
+  color: #5AB41D !important;
+}
+.header nav.navbar ul.navbar-nav li.nav-item {
+  padding: 12px;
+}
+.header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: #529121 !important;
+}
+
+
+.banner{
+  width:100% !important;
+  margin: 1em auto;
+  position: relative;
+  background: #ffffff !important;
+}
+.jumbotron {
+  background-color: #ffffff !important;
+}
+
+.banner .jumbotron .update {
+  color: #000000;
+  border-radius: 30px;
+  padding: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.banner .jumbotron .banner-text {
+  margin: 4em auto !important;
+}
+.banner .jumbotron .banner-text .update span {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #529121;
+  font-size: 12px;
+  position: relative;
+  color: #ffffff;
+  width: 10%;
+  font-weight: 600;
+  margin:
+}
+
+.banner .jumbotron .banner-text {
+  width: 100%;
+  text-align: left;
+  margin: 1em auto;
+}
+.banner .jumbotron .banner-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.banner .jumbotron .banner-text p {
+  font-size: 18px;
+  margin: 5px auto;
+  color: #8d8a8a;
+}
+.banner .jumbotron .banner-text a.btn {
+  padding: 10px;
+  width: 40%;
+  margin: 2em auto;
+}
+
+.banner .jumbotron .banner-img {
+  margin: auto;
+}
+
+
+.feature_section {
+  width:100% !important;
+  margin: 1em auto;
+  position: relative;
+  background: #ffffff !important;
+}
+
+.feature_section .feature_heading {
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+
+.feature_section .feature_heading h3 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.feature_section .feature_heading p {
+  font-size: 18px;
+}
+
+

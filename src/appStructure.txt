@@ -1,0 +1,18 @@
++ src
++---- app
+|   +--- public
+|   |------index
+|   |---------|banner
+|   |---------|-----banner.component.ts.hmtl.css
+|   |---------|feature
+|   |---------|-----feature.component.ts.hmtl.css
+|   |---------|footer
+|   |---------|-----footer.component.ts.hmtl.css
+|   |---------|header
+|   |---------|-----footer.component.ts.hmtl.css
+|   |---------|product
+|   |---------|----product.component.ts.hmtl.css
+|   |---------|quote
+|   |---------|-----banner.component.ts.hmtl.css
+|   +--- app.module.ts
++---index.html

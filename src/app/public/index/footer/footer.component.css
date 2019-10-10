@@ -1,0 +1,14 @@
+footer.footer {
+  background: rgb(218, 245, 200);
+  margin: auto !important;
+  padding: 3em;
+}
+
+footer.footer h5 {
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+footer.footer ul.list-unstyled li {
+  line-height: 2em;
+}
