@@ -87,7 +87,7 @@ body {
 
 .feature_section {
   width:100% !important;
-  margin: 1em auto;
+  margin: auto;
   position: relative;
   background: #ffffff !important;
 }
@@ -106,5 +106,3 @@ body {
 .feature_section .feature_heading p {
   font-size: 18px;
 }
-
-

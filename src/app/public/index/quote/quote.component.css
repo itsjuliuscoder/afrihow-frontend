@@ -1,0 +1,28 @@
+.quote_bar {
+  width: 100%;
+  margin: auto;
+  margin: 2em auto;
+  background-color: #000000 !important;
+  padding: 6em;
+}
+.quote_bar h2 {
+  text-align: center !important;
+  color: #ffffff;
+  font-weight: 700;
+}
+.quote_bar .quote_text .quote_button {
+  width: 100%;
+  margin: auto;
+}
+
+.buttons {
+  width: 100%;
+  margin: 3em auto;
+}
+
+.buttons a {
+  padding: 12px;
+  width: 40%;
+  text-transform: uppercase;
+  font-weight: 600;
+}

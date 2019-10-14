@@ -1,5 +1,6 @@
 footer.footer {
-  background: rgb(218, 245, 200);
+  /* background: rgb(218, 245, 200); */
+  background-color: #ffffff;
   margin: auto !important;
   padding: 3em;
 }
@@ -11,4 +12,8 @@ footer.footer h5 {
 
 footer.footer ul.list-unstyled li {
   line-height: 2em;
+}
+
+footer small {
+  font-size: 16px;
 }
