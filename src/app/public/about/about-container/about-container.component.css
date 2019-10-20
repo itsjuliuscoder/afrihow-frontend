@@ -1,0 +1,10 @@
+.about_container {
+  width: 100%;
+  margin: 6em auto;
+}
+.about_story {
+  width: 100%;
+  margin: 3em auto;
+  background: #f3f1f1 !important;
+  padding: 2em;
+}

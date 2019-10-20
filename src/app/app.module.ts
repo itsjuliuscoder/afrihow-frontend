@@ -10,6 +10,10 @@ import { FooterComponent } from './public/index/footer/footer.component';
 import { ProductComponent } from './public/index/product/product.component';
 import { QuoteComponent } from './public/index/quote/quote.component';
 import { NavbarComponent } from './public/index/navbar/navbar.component';
+import { AboutComponent } from './public/about/about.component';
+import { AboutBannerComponent } from './public/about/about-banner/about-banner.component';
+import { IndexComponent } from './public/index/index.component';
+import { AboutContainerComponent } from './public/about/about-container/about-container.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { NavbarComponent } from './public/index/navbar/navbar.component';
     ProductComponent,
     QuoteComponent,
     NavbarComponent,
+    AboutComponent,
+    AboutBannerComponent,
+    IndexComponent,
+    AboutContainerComponent,
   ],
   imports: [
     BrowserModule,

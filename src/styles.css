@@ -92,6 +92,9 @@ body {
   background: #ffffff !important;
 }
 
+.feature_section h2 {
+  text-align: center !important;
+}
 .feature_section .feature_heading {
   text-align: left;
   position: relative;
