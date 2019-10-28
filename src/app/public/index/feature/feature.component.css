@@ -1,10 +1,21 @@
+.feature_section {
+  background-color: rgb(209, 248, 198) !important;
+  margin: 2em auto;
+  padding: 3em;
+}
 .feature_heading {
   width: 100%;
   margin: auto;
 }
 .feature_heading h3 {
   line-height: 1.3em;
+  font-size: 3em;
+  margin-bottom: 2em;
 }
 .feature_heading p {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+.feature_container {
+  width: 100%;
+  margin: 4em auto;
 }
