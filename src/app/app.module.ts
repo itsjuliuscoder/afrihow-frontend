@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -14,6 +14,18 @@ import { AboutComponent } from './public/about/about.component';
 import { AboutBannerComponent } from './public/about/about-banner/about-banner.component';
 import { IndexComponent } from './public/index/index.component';
 import { AboutContainerComponent } from './public/about/about-container/about-container.component';
+import { ContactComponent } from './public/contact/contact.component';
+import { ContactContainerComponent } from './public/contact/contact-container/contact-container.component';
+import { ContactBannerComponent } from './public/contact/contact-banner/contact-banner.component';
+import { BlogComponent } from './public/blog/blog.component';
+import { PricingComponent } from './public/pricing/pricing.component';
+import { LegalComponent } from './public/legal/legal.component';
+import { EnterpriseComponent } from './public/enterprise/enterprise.component';
+import { ApiComponent } from './public/api/api.component';
+import { LearningHubComponent } from './public/learning-hub/learning-hub.component';
+import { HelpCenterComponent } from './public/help-center/help-center.component';
+import { LoginComponent } from './publisher/login/login.component';
+import { RegisterComponent } from './publisher/register/register.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +40,27 @@ import { AboutContainerComponent } from './public/about/about-container/about-co
     AboutBannerComponent,
     IndexComponent,
     AboutContainerComponent,
+    ContactComponent,
+    ContactContainerComponent,
+    ContactBannerComponent,
+    BlogComponent,
+    PricingComponent,
+    LegalComponent,
+    EnterpriseComponent,
+    ApiComponent,
+    LearningHubComponent,
+    HelpCenterComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

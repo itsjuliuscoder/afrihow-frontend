@@ -1,3 +1,6 @@
+p {
+  font-size: 20px;
+}
 .about_container {
   width: 100%;
   margin: 6em auto;
@@ -5,6 +8,27 @@
 .about_story {
   width: 100%;
   margin: 3em auto;
-  background: #f3f1f1 !important;
+  background-color: rgb(178, 235, 141) !important;
   padding: 2em;
 }
+.about_story_text {
+  margin: 3em auto !important;
+}
+.about_story_text h3 {
+  font-size: 36px;
+}
+.about_story_text p {
+  line-height: 1.6em;
+}
+.about_content img {
+  width: 80% !important;
+  margin: auto;
+}
+.about_tech {
+  width: 100%;
+  margin: 2em auto;
+  padding: 6em;
+  background: #f3f1f1 !important;
+  text-align: center !important;
+}
+

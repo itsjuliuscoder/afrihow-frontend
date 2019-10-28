@@ -1,18 +1,18 @@
-.about-banner {
+.contact-banner {
   width: 100%;
   margin: auto;
   padding: 6em;
   background: #5AB41D;
   color: #ffffff;
 }
-.about-banner .about-banner-text {
+.contact-banner .contact-banner-text {
   width: 100%;
   text-align: center;
   margin: 5em auto !important;
 }
-.about-banner .about-banner-text h5 {
-  font-size: 16px;
+.contact-banner .contact-banner-text p {
+  font-size: 20px;
 }
-.about-banner .about-banner-text h2 {
+.contact-banner .contact-banner-text h2 {
   font-size: 50px;
 }
