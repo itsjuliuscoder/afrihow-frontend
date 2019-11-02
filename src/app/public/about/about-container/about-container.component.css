@@ -5,12 +5,17 @@ p {
   width: 100%;
   margin: 6em auto;
 }
+.about_content h2 {
+  font-size: 40px !important;
+  font-weight: 900;
+}
 .about_story {
   width: 100%;
   margin: 3em auto;
-  background-color: rgb(178, 235, 141) !important;
-  padding: 2em;
+  background-color: rgb(214, 248, 192) !important;
+  padding: 1em;
 }
+
 .about_story_text {
   margin: 3em auto !important;
 }
@@ -19,6 +24,7 @@ p {
 }
 .about_story_text p {
   line-height: 1.6em;
+  margin: 2em auto;
 }
 .about_content img {
   width: 80% !important;

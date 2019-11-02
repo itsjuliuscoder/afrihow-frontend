@@ -1,14 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 a:hover {
   text-decoration: none;
-  color: #529121 !important;
+  color: #34680d !important;
+}
+a.btn:hover {
+  color: #ffffff !important;
 }
 p {
   font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cantarell', sans-serif;
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #295508 !important;
 }
 
 body {
@@ -34,7 +37,12 @@ body {
   padding: 12px;
 }
 .header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-  color: #529121 !important;
+  color: #7bc940 !important;
+  font-weight: 600;
+}
+
+.header nav.navbar ul.navbar-nav li.nav-item a:hover {
+  color: #5AB41D !important;
 }
 
 
@@ -66,8 +74,7 @@ body {
   position: relative;
   color: #ffffff;
   width: 10%;
-  font-weight: 600;
-  margin:
+
 }
 
 .banner .jumbotron .banner-text {
@@ -76,8 +83,8 @@ body {
   margin: 1em auto;
 }
 .banner .jumbotron .banner-text h1 {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 45px;
+  font-weight: 900 !important;
 }
 .banner .jumbotron .banner-text p {
   font-size: 18px;

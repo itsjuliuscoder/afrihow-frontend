@@ -7,7 +7,7 @@
 }
 .quote_bar h2 {
   text-align: center !important;
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 700;
 }
 .quote_bar .quote_text .quote_button {
@@ -25,4 +25,7 @@
   width: 40%;
   text-transform: uppercase;
   font-weight: 600;
+}
+.buttons a.btn-outline-light:hover {
+  color: #000000 !important;
 }

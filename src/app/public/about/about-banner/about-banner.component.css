@@ -3,16 +3,20 @@
   margin: auto;
   padding: 6em;
   background: #5AB41D;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .about-banner .about-banner-text {
   width: 100%;
   text-align: center;
   margin: 5em auto !important;
+  color: #ffffff !important;
 }
 .about-banner .about-banner-text h5 {
   font-size: 16px;
+  color: #ffffff !important;
 }
 .about-banner .about-banner-text h2 {
   font-size: 50px;
+  font-size: #ffffff !important;
+  font-weight: 300;
 }

@@ -1,0 +1,6 @@
+.navbar-nav li.nav-item a.btn:hover {
+  color: #ffffff !important;
+}
+.navbar-nav li.nav-item a.btn {
+  font-weight: 600;
+}
