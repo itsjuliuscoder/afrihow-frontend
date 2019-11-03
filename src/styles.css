@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth !important;
+}
 a:hover {
   text-decoration: none;
   color: #34680d !important;

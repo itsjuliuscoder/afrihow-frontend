@@ -26,6 +26,13 @@ import { LearningHubComponent } from './public/learning-hub/learning-hub.compone
 import { HelpCenterComponent } from './public/help-center/help-center.component';
 import { LoginComponent } from './publisher/login/login.component';
 import { RegisterComponent } from './publisher/register/register.component';
+import { StpriesComponent } from './public/stpries/stpries.component';
+import { TopicsComponent } from './public/topics/topics.component';
+import { SubjectComponent } from './public/subject/subject.component';
+import { DeveloperComponent } from './public/developer/developer.component';
+import { GettingStartedComponent } from './public/getting-started/getting-started.component';
+import { TermsComponent } from './public/legal/terms/terms.component';
+import { PrivacyComponent } from './public/legal/privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +59,13 @@ import { RegisterComponent } from './publisher/register/register.component';
     HelpCenterComponent,
     LoginComponent,
     RegisterComponent,
+    StpriesComponent,
+    TopicsComponent,
+    SubjectComponent,
+    DeveloperComponent,
+    GettingStartedComponent,
+    TermsComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,
