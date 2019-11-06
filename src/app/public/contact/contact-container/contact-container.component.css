@@ -1,5 +1,4 @@
 .newsletter {
-  background-color: rgb(248, 248, 248);
   margin: 2em auto;
   padding: 3em;
 }
@@ -37,21 +36,28 @@
 }
 .contact_container .subscriber h2 {
   color: #243c4f;
-  margin-bottom: 40px; }
-  .contact_container .subscriber .form-control {
+  margin-bottom: 10px;
+}
+
+.contact_container .subscriber .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: #5AB41D;
   border-radius:0;
 }
-.contact_container .subscriber.form-control:focus {
-  box-shadow: none;
-  border: 2px solid #243c4f;
+.contact_container .subscriber .input-group {
+  margin-top: 3em !important;
 }
+/* .contact_container .subscriber.form-control:focus {
+  box-shadow: none;
+} */
 .contact_container .subscriber .btn {
   min-height: 50px;
   border-radius:0;
-  background: #243c4f;
+  background: #5AB41D;
   color: #fff;
   font-weight:600;
+}
+.contact_container .subscriber .btn:hover {
+  background: #34680d;
 }
 

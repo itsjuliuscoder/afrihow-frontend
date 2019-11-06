@@ -33,6 +33,10 @@ import { DeveloperComponent } from './public/developer/developer.component';
 import { GettingStartedComponent } from './public/getting-started/getting-started.component';
 import { TermsComponent } from './public/legal/terms/terms.component';
 import { PrivacyComponent } from './public/legal/privacy/privacy.component';
+import { PrivacyPoliciesComponent } from './public/privacy-policies/privacy-policies.component';
+import { AdminComponent } from './admin/admin.component';
+import { BlogContainerComponent } from './public/blog/blog-container/blog-container.component';
+import { BlogBannerComponent } from './public/blog/blog-banner/blog-banner.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +70,10 @@ import { PrivacyComponent } from './public/legal/privacy/privacy.component';
     GettingStartedComponent,
     TermsComponent,
     PrivacyComponent,
+    PrivacyPoliciesComponent,
+    AdminComponent,
+    BlogContainerComponent,
+    BlogBannerComponent,
   ],
   imports: [
     BrowserModule,
