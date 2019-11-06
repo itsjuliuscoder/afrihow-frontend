@@ -1,3 +1,4 @@
+import { HeaderComponent } from './public/index/header/header.component';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -33,6 +34,7 @@ import { DeveloperComponent } from './public/developer/developer.component';
 import { GettingStartedComponent } from './public/getting-started/getting-started.component';
 import { TermsComponent } from './public/legal/terms/terms.component';
 import { PrivacyComponent } from './public/legal/privacy/privacy.component';
+import { PublicComponent } from './public/public.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,8 @@ import { PrivacyComponent } from './public/legal/privacy/privacy.component';
     GettingStartedComponent,
     TermsComponent,
     PrivacyComponent,
+    PublicComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
