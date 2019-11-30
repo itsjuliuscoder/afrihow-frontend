@@ -3,12 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --prod"
+    "e2e": "ng e2e"
   },
   "engines": {
     "node": "10.16.1",
@@ -31,6 +30,7 @@
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
+    "flat-icons": "^1.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "path": "^0.12.7",

@@ -2,7 +2,8 @@
   width: 100%;
   margin: auto;
   padding: 6em;
-  background: #5AB41D;
+  background: url(../../../../assets/banner-2.png) no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 .contact-banner .contact-banner-text {
@@ -12,6 +13,7 @@
 }
 .contact-banner .contact-banner-text p {
   font-size: 20px;
+  color: #5AB41D !important;
 }
 .contact-banner .contact-banner-text h2 {
   font-size: 50px;

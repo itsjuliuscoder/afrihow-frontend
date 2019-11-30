@@ -34,7 +34,9 @@ p {
   width: 100%;
   margin: 2em auto;
   padding: 6em;
-  background: #f3f1f1 !important;
+  background: url(../../../../assets/bg.png) no-repeat !important;
+  background-size: cover;
+  background-position: center !important;
   text-align: center !important;
 }
 

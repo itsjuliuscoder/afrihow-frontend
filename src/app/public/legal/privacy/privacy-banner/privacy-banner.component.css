@@ -1,0 +1,20 @@
+.privacy-banner {
+  width: 100%;
+  margin: auto;
+  padding: 6em;
+  background: url(../../../../../assets/banner-2.png) no-repeat;
+  background-size: cover;
+  color: #5AB41D;
+}
+.privacy-banner .privacy-banner-text {
+  width: 100%;
+  text-align: center;
+  margin: 5em auto !important;
+}
+.privacy-banner .privacy-banner-text h5 {
+  font-size: 16px;
+  color: #5AB41D !important;
+}
+.privacy-banner .privacy-banner-text h2 {
+  font-size: 50px;
+}

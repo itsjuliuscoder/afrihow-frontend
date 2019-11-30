@@ -1,0 +1,40 @@
+.get_started_bar {
+  width: 100%;
+  margin: auto;
+  margin: 5em auto;
+  background-color: #ffffff;
+  /* padding: 6em; */
+}
+.get_started_bar h2 {
+  text-align: center !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.get_started_bar .quote_text .quote_button {
+  width: 100%;
+  margin: auto;
+}
+
+.buttons {
+  width: 100%;
+  margin: 3em auto;
+}
+
+.buttons a {
+  padding: 12px;
+  width: 40%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.buttons a.btn-outline-light:hover {
+  color: #000000 !important;
+}
+.get_started_col{
+  background-color: #ffffff !important;
+  padding: 4em;
+}
+.get_started_img img {
+  background-size: cover;
+  min-height: 500px;
+}
+

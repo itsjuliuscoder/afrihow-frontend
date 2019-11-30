@@ -1,0 +1,22 @@
+.blog_banner {
+  width: 100%;
+  margin: auto;
+  padding: 6em;
+  background: #5AB41D;
+  color: #ffffff !important;
+}
+.blog_banner .blog_banner_text {
+  width: 100%;
+  text-align: center !important;
+  margin: 5em auto !important;
+  color: #ffffff !important;
+}
+.blog_banner .blog_banner_text h5 {
+  font-size: 16px;
+  color: #ffffff !important;
+}
+.blog_banner .blog_banner_text h2 {
+  font-size: 50px;
+  font-size: #ffffff !important;
+  font-weight: 300;
+}

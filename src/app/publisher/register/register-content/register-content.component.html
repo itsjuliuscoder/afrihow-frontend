@@ -1,0 +1,46 @@
+<div class="login-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="login-text">
+                  <h2>Get Started in Minutes</h2>
+                  <h4>Register Now</h4>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="login_img">
+                            <img src="../../../../assets/afrihow_sm.jpg" class="img-fluid" alt="AfriHow Logo">
+                        </div>
+                        <!-- <h4 class="text-center">AfriHow</h4> -->
+                        <form [formGroup]="registerForm">
+                            <div class="form-row">
+                                <input type="text" required class="form-control" formControlName="fullname" name="fullname" placeholder="Full Name">
+                            </div>
+                            <div class="form-row">
+                              <input type="email" required class="form-control" formControlName="email" name="email" placeholder="Email Address">
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                  <input type="password" required class="form-control" formControlName="password" placeholder="Password">
+                              </div>
+                              <div class="col-md-6">
+                                  <input type="password" required class="form-control" formControlName="confirmpassword" placeholder="Confirm Password">
+                              </div>
+                            </div>
+                            <div>
+                              <p>By clicking Sign Up, you agree to AfriHow's <a href="#" routerLink="/terms">Terms of Use</a> & <a href="#" routerLink="/privacy">Privacy Policies</a></p>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="col-md-6"><p>Already a user? <a href="#" routerLink="/login">Sign In</a></p></div>
+                                <!-- <div class="col-md-6"><button (click)="onClickSubmit()" class="btn btn-info btn-login pull-right pl-4 pr-4">Continue</button></div> -->
+                                <div class="col-md-6"><input type="submit" [disabled]="registerForm.invalid" class="btn btn-info btn-login pull-right pl-4 pr-4" value="Continue"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

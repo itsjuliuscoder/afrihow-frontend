@@ -1,0 +1,24 @@
+.privacy-container {
+  width: 100%;
+  margin: 2em auto;
+  padding: 6em;
+}
+.privacy-container h4 {
+  font-size: 36px;
+}
+.privacy-container p {
+  font-size: 20px;
+}
+.privacy-container ol {
+  font-size: 20px;
+  font-weight: 600;
+}
+.privacy-container .privacy_info {
+  width: 100%;
+  margin: 4em auto !important;
+}
+.privacy-container .privacy_info span {
+  font-weight: 900;
+  color: #34680d;
+}
+

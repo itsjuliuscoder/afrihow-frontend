@@ -12,11 +12,17 @@ import { GettingStartedComponent } from './public/getting-started/getting-starte
 import { LearningHubComponent } from './public/learning-hub/learning-hub.component';
 import { TermsComponent } from './public/legal/terms/terms.component';
 import { PrivacyComponent } from './public/legal/privacy/privacy.component';
-
-
+import { StoriesComponent } from './public/stories/stories.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BlogDetailsComponent } from './public/blog/blog-details/blog-details.component';
+import { SupportComponent } from './public/support/support.component';
+import { LoginComponent } from './publisher/login/login.component';
+import { RegisterComponent } from './publisher/register/register.component';
+import { ForgotPasswordComponent } from './publisher/forgot-password/forgot-password.component';
 
 
 const routes: Routes = [
+
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'index', component: IndexComponent },
@@ -24,12 +30,19 @@ const routes: Routes = [
   { path: 'help-center', component: HelpCenterComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'legal', component: LegalComponent },
-  { path: 'topic', component: TopicsComponent },
-  { path: 'subject', component: SubjectComponent },
-  { path: 'learning-hub', component: LearningHubComponent },
+  { path: 'topics', component: TopicsComponent },
+  { path: 'subjects', component: SubjectComponent },
   { path: 'getting-started', component: GettingStartedComponent },
   { path: 'terms', component: TermsComponent },
-  { path: 'privacy', component: PrivacyComponent }
+  { path: 'privacy', component: PrivacyComponent },
+  { path: 'stories', component: StoriesComponent },
+  { path: 'support', component: SupportComponent},
+  { path: 'afrihow-tips', component: LearningHubComponent},
+  { path: 'blog/:id', component: BlogDetailsComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'register', component: RegisterComponent},
+  { path: 'reset-password', component: ForgotPasswordComponent},
+  { path: '**', component: PageNotFoundComponent},
 
 ];
 
@@ -38,3 +51,23 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents = [AboutComponent,
+                                  IndexComponent,
+                                  BlogComponent,
+                                  HelpCenterComponent,
+                                  ContactComponent,
+                                  LegalComponent,
+                                  TopicsComponent,
+                                  SubjectComponent,
+                                  LearningHubComponent,
+                                  GettingStartedComponent,
+                                  TermsComponent,
+                                  PrivacyComponent,
+                                  StoriesComponent,
+                                  PageNotFoundComponent,
+                                  BlogDetailsComponent,
+                                  LoginComponent,
+                                  RegisterComponent,
+                                  ForgotPasswordComponent
+                                  ];
+

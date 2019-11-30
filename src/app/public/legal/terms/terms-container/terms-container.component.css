@@ -1,0 +1,19 @@
+.terms_container {
+  width: 100%;
+  margin: 2em auto;
+  padding: 6em;
+}
+.terms_container h4 {
+  font-size: 36px;
+}
+.terms_container p {
+  font-size: 20px;
+}
+.terms_container ol {
+  font-size: 20px;
+  font-weight: 600;
+}
+.terms_container .terms_info {
+  width: 100%;
+  margin: 2em auto;
+}

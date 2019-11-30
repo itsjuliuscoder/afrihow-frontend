@@ -1,45 +1,73 @@
-<div class="header">
+<!-- <div class="header">
   <div class="container">
-      <div class="row">
-          <nav class="navbar navbar-expand-lg">
-              <div class="container">
-                <a class="navbar-brand js-scroll-trigger" routerLink="/index"><img src="../../../../assets/afrihow_sm.jpg" alt="AfriHow's Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav ml-auto" routerLinkActive="active" >
-                    <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" routerLink="/products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger"  routerLink="/enterprise">Enterprise</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link js-scroll-trigger" routerLink="/pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
-                      <div class="dropdown-menu">
-                          <a href="#" class="dropdown-item" routerLink="/about">About</a>
-                          <a href="#" class="dropdown-item" routerLink="/blog">Blog</a>
-                          <a href="#" class="dropdown-item" routerLink="/contact">Contact</a>
-                          <div class="dropdown-divider" routerLink="/career">Careers</div>
-                          <a href="#"class="dropdown-item">Trash</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" routerLink="/login">Sign In</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="btn btn-outline-success mt-1" routerLink="/register" role="button">Create Account</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          </nav>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-fixed-top">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" routerLink="/index"><img src="../../../../assets/afrihow_sm.jpg" alt="AfriHow's Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto" routerLinkActive="active" >
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" routerLink="/products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger"  routerLink="/enterprise">Enterprise</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" routerLink="/pricing">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</a>
+                  <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item" routerLink="/about">About</a>
+                      <a href="#" class="dropdown-item" routerLink="/blog">Blog</a>
+                      <a href="#" class="dropdown-item" routerLink="/contact">Contact</a>
+                      <div class="dropdown-divider" routerLink="/career">Careers</div>
+                      <a href="#"class="dropdown-item">Trash</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" routerLink="/login">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-outline-success mt-1" routerLink="/register" role="button">Create Account</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
   </div>
-</div>
+</div> -->
 
-<router-outlet></router-outlet>
+
+<nav class="navbar navbar-expand-lg navbar-white ftco_navbar bg-white ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand js-scroll-trigger" routerLink="/index"><img src="../../../../assets/afrihow_sm.jpg" alt="AfriHow's Logo"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon" ></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto p-2">
+	          <li class="nav-item pr-3">
+              <a class="nav-link js-scroll-trigger mt-2" routerLink="/products" routerLinkActive="active">Products</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link js-scroll-trigger mt-2"  routerLink="/enterprise" routerLinkActive="active">Enterprise</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link js-scroll-trigger mt-2" routerLink="/pricing" routerLinkActive="active">Pricing</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link js-scroll-trigger mt-2" routerLink="/login" routerLinkActive="active">Sign In</a>
+            </li>
+            <li class="nav-item pr-3 mt-2">
+              <a class="btn btn-outline-success" routerLink="/register" role="button">Create Account</a>
+            </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    <router-outlet></router-outlet>

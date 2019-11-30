@@ -1,0 +1,31 @@
+.subject-banner {
+  width: 100%;
+  margin: auto !important;
+  padding: 3em;
+  background: transparent;
+  color: #5AB41D !important;
+}
+/* .subject-banner .subject-banner-text {
+  width: 100%;
+  text-align: center !important;
+  margin: 5em auto !important;
+  color: #5AB41D !important;
+} */
+.subject-banner .subject-banner-text h5 {
+  font-size: 16px;
+  color: #5AB41D !important;
+}
+.subject-banner h2 {
+  font-size: 50px;
+  font-size: #5AB41D !important;
+  font-weight: 300;
+  margin-top: 2em;
+  text-align: left !important;
+}
+.subject-banner .subject-banner-img {
+  margin: auto !important;
+  width: 80%;
+  min-height: 550px !important;
+  max-height: 550px !important;
+  position: relative;
+}

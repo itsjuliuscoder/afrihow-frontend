@@ -4,3 +4,7 @@
 .banner-text h1 {
   font-weight: 900 !important;
 }
+.banner-text h2 {
+  line-height: 1.3em;
+  font-size: 3em;
+}

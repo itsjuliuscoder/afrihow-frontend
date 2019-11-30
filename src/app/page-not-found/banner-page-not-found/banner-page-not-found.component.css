@@ -1,0 +1,23 @@
+.learning-banner {
+  width: 100%;
+  margin: auto;
+  padding: 2em;
+  background: url(../../../assets/banner-2.png);
+  background-size: cover;
+  color: #ffffff !important;
+}
+.learning-banner .learning-banner-text {
+  width: 100%;
+  text-align: center;
+  margin: 5em auto !important;
+  color: #5AB41D !important;
+}
+.learning-banner .learning-banner-text h5 {
+  font-size: 16px;
+  color: #5AB41D !important;
+}
+.learning-banner .learning-banner-text h2 {
+  font-size: 50px;
+  font-size: #5AB41D !important;
+  font-weight: 300;
+}

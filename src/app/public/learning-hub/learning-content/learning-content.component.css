@@ -1,0 +1,23 @@
+.learning-content {
+  padding: 7em 0;
+}
+.learning-content {
+  width: 100%;
+  margin: auto;
+  padding: 6em;
+}
+.learning-content .learning_col {
+  width: 100%;
+  position: relative;
+  margin: 5em auto;
+}
+.learning-content .learning_col h3 {
+  text-align: left !important;
+  font-size: 32px !important;
+  font-weight: 600;
+}
+.learning-content .learning_col h4 {
+  text-align: left !important;
+  font-size: 16px;
+  font-weight: 300 !important;
+}

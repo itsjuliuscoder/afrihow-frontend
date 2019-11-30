@@ -1,0 +1,36 @@
+<div class="login-wrapper">
+    <div class="container">
+        <div class="row p-2">
+            <div class="col-md-6">
+                <div class="login-text">
+                  <h2>Glad You are back</h2>
+                  <h4>Login to continue</h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="login_img">
+                            <img src="../../../../assets/afrihow_sm.jpg" class="img-fluid" alt="AfriHow Logo">
+                        </div>
+                        <form [formGroup]="loginForm">
+                            <div>
+                                <input type="email" required class="form-control" formControlName="email" placeholder="Email Address">
+                            </div>
+                            <div>
+                                <input type="password" required class="form-control" formControlName="password" placeholder="Password">
+                            </div>
+                            <div>
+                              <a href="#" routerLink="/reset-password">Forgot Password?</a>
+                            </div>
+                            <div class="form-row mt-4">
+                                <div class="col-md-7"><p>New to AfriHow? <a href="#" routerLink="/register">Create Account</a></p></div>
+                                <div class="col-md-5"><input type="submit" [disabled]="loginForm.invalid" class="btn btn-info btn-login pull-right pl-4 pr-4" value="Login"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
