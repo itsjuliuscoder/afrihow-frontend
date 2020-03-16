@@ -42,7 +42,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.route.url.subscribe(data => {
-      this.authType = data[data.length -1].path;
+      this.authType = data[data.length - 1].path;
     });
     this.loginFormField();
     this.registerFormFields();

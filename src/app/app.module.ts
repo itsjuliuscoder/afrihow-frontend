@@ -73,9 +73,7 @@ import { FaqsBannerComponent } from './public/faqs/faqs-banner/faqs-banner.compo
 import { FaqsContentComponent } from './public/faqs/faqs-content/faqs-content.component';
 import { EnterpriseContentComponent } from './public/enterprise/enterprise-content/enterprise-content.component';
 import { EnterpriseBannerComponent } from './public/enterprise/enterprise-banner/enterprise-banner.component';
-import { SubjectStoriesComponent } from './public/subject-stories/subject-stories.component';
-import { SubjectStoriesSingleComponent } from './public/subject-stories-single/subject-stories-single.component';
-import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { HowItWorksComponent } from './public/how-it-works/how-it-works.component';
 import { PricingBannerComponent } from './public/pricing/pricing-banner/pricing-banner.component';
 import { PricingContentComponent } from './public/pricing/pricing-content/pricing-content.component';
 import { ExploreComponent } from './public/explore/explore.component';
@@ -148,8 +146,6 @@ import { ExploreComponent } from './public/explore/explore.component';
     FaqsBannerComponent,
     EnterpriseContentComponent,
     EnterpriseBannerComponent,
-    SubjectStoriesComponent,
-    SubjectStoriesSingleComponent,
     HowItWorksComponent,
     PricingBannerComponent,
     PricingContentComponent,
