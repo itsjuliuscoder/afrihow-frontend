@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-forgot-password-content',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgotPasswordContentComponent implements OnInit {
 
-  constructor() { }
+  resetPassword: FormGroup;
+  email: string;
+
+  constructor(private fb: FormBuilder) {
+
+    this.resetPassword = this.fb.group({
+      email: [''],
+    });
+
+  }
 
   ngOnInit() {
   }

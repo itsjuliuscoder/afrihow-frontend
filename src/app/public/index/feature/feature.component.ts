@@ -18,8 +18,8 @@ import {
       transition('* => *', [
         query('.col-md-4', style({ opacity: 0, transform: 'translateX(-40px' })),
 
-        query('.col-md-4', stagger('1000ms', [
-          animate('1000ms 1.8s ease-in', style({ opacity: 1, transform: 'translateX(0)'}))
+        query('.col-md-4', stagger('500ms', [
+          animate('1000ms 1.0s ease-in', style({ opacity: 1, transform: 'translateX(0)'}))
         ]))
       ])
     ])

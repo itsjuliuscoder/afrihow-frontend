@@ -1,0 +1,37 @@
+.enterprise {
+  width: 100%;
+  margin: 3em auto;
+  padding: 1em;
+}
+.enterprise_first {
+  width: 100%;
+  margin: 4em auto;
+  padding: 1em;
+}
+.enterprise_first .enterprise_first_col_1 {
+  width: 100%;
+  padding: 2em;
+  background: rgb(241, 247, 165);
+
+}
+.enterprise_first .enterprise_first_col_2 {
+  width: 100%;
+  padding: 2em;
+  background: rgb(213, 247, 190);
+}
+
+.enterprise_first .enterprise_first_col_1 h4 {
+  font-size: 32px;
+}
+
+.enterprise_first .enterprise_first_col_2 h4 {
+  font-size: 32px;
+}
+
+.enterprise_first .enterprise_first_col_1 p {
+  font-size: 18px;
+}
+
+.enterprise_first .enterprise_first_col_2 p {
+  font-size: 18px;
+}

@@ -14,7 +14,7 @@
                             <img src="../../../../assets/afrihow_sm.jpg" class="img-fluid" alt="AfriHow Logo">
                         </div>
                         <!-- <h4 class="text-center">AfriHow</h4> -->
-                        <form [formGroup]="registerForm">
+                        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
                             <div class="form-row">
                                 <input type="text" required class="form-control" formControlName="fullname" name="fullname" placeholder="Full Name">
                             </div>

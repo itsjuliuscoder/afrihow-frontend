@@ -1,0 +1,15 @@
+.faqs_content {
+  width: 100%;
+  margin: 2em auto;
+  padding: 3em;
+}
+.faqs_content #accordion .card .card-header button.btn:hover {
+  text-decoration: none !important;
+}
+.faqs_content #accordion .card .card-header button.btn:visited {
+  text-decoration: none !important;
+}
+.faqs_content #accordion .card .card-header button.btn.btn-link:active {
+  text-decoration: none !important;
+}
+

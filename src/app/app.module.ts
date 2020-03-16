@@ -68,6 +68,17 @@ import { ForgotPasswordContentComponent } from './publisher/forgot-password/forg
 import { PublisherComponent } from './publisher/publisher.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpService } from './http.service';
+import { FaqsComponent } from './public/faqs/faqs.component';
+import { FaqsBannerComponent } from './public/faqs/faqs-banner/faqs-banner.component';
+import { FaqsContentComponent } from './public/faqs/faqs-content/faqs-content.component';
+import { EnterpriseContentComponent } from './public/enterprise/enterprise-content/enterprise-content.component';
+import { EnterpriseBannerComponent } from './public/enterprise/enterprise-banner/enterprise-banner.component';
+import { SubjectStoriesComponent } from './public/subject-stories/subject-stories.component';
+import { SubjectStoriesSingleComponent } from './public/subject-stories-single/subject-stories-single.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { PricingBannerComponent } from './public/pricing/pricing-banner/pricing-banner.component';
+import { PricingContentComponent } from './public/pricing/pricing-content/pricing-content.component';
+import { ExploreComponent } from './public/explore/explore.component';
 
 @NgModule({
   declarations: [
@@ -132,6 +143,17 @@ import { HttpService } from './http.service';
     ForgotPasswordContentComponent,
     PublisherComponent,
     WelcomeComponent,
+    FaqsComponent,
+    FaqsContentComponent,
+    FaqsBannerComponent,
+    EnterpriseContentComponent,
+    EnterpriseBannerComponent,
+    SubjectStoriesComponent,
+    SubjectStoriesSingleComponent,
+    HowItWorksComponent,
+    PricingBannerComponent,
+    PricingContentComponent,
+    ExploreComponent,
   ],
   imports: [
     BrowserModule,
@@ -140,7 +162,7 @@ import { HttpService } from './http.service';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
 

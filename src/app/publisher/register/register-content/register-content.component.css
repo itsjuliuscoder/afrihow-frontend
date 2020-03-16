@@ -46,6 +46,13 @@
   margin: 1em auto;
   padding: 22px;
 }
+.login-wrapper .card .card-body form input[type="submit"]{
+  background-color: #5AB41D;
+  font-weight: 700;
+  border: none;
+  padding: 9px;
+  float: right;
+}
 .login-wrapper .card .card-body form button.btn-login {
   background-color: #5AB41D;
   font-weight: 700;

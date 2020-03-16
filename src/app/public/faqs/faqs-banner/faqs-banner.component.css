@@ -1,0 +1,23 @@
+.about-banner {
+  width: 100%;
+  margin: auto;
+  padding: 6em;
+  background: url(../../../../assets/banner-2.png) no-repeat;
+  background-size: cover;
+  color: #ffffff !important;
+}
+.about-banner .about-banner-text {
+  width: 100%;
+  text-align: center;
+  margin: 5em auto !important;
+  color: #5AB41D !important;
+}
+.about-banner .about-banner-text h5 {
+  font-size: 16px;
+  color: #5AB41D !important;
+}
+.about-banner .about-banner-text h2 {
+  font-size: 50px;
+  font-size: #5AB41D !important;
+  font-weight: 300;
+}
