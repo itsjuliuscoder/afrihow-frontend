@@ -3,6 +3,12 @@
 html {
   scroll-behavior: smooth !important;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a:hover {
   text-decoration: none;
   color: #34680d !important;
@@ -12,17 +18,13 @@ a.btn:hover {
 }
 p {
   font-family: 'Lato', sans-serif;
-  word-spacing: 8px;
+  word-spacing: 2px !important;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   color: #295508 !important;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
 .header {
   background: #ffffff;
   width: 100%;
@@ -130,4 +132,33 @@ body {
 
 .feature_section .feature_heading p {
   font-size: 18px;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    padding: 2em;
+  }
+  .contact-banner {
+    padding: 2em;
+    width: 100%;
+  }
+  .contact-banner .contact-banner-text h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+    padding: 2em;
+  }
+  .contact-banner {
+    padding: 2em;
+    width: 100%;
+  }
+  .contact-banner .contact-banner-text h2 {
+    font-size: 30px !important;
+  }
 }
