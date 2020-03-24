@@ -14,30 +14,53 @@
                           <img src="../../../../assets/afrihow_sm.jpg" class="img-fluid" alt="AfriHow Logo">
                       </div>
                       <!-- <h4 class="text-center">AfriHow</h4> -->
-                      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                          <div class="form-row">
-                              <input type="text" required class="form-control" formControlName="fullname" name="fullname" placeholder="Full Name">
-                          </div>
-                          <div class="form-row">
-                            <input type="email" required class="form-control" formControlName="email" name="email" placeholder="Email Address">
-                          </div>
-                          <div class="form-row">
-                            <div class="col-md-6">
-                                <input type="password" required class="form-control" formControlName="password" placeholder="Password">
+                      <div *ngIf="authType == 'register'">
+                        <div class="alert alert-danger" role="alert" *ngIf="registerErr">
+                          <button aria-label="Close" class="close ng-star-inserted" type="button"><span aria-hidden="true">×</span></button>{{registerErrorMsg}}
+                        </div>
+                        <form [formGroup]="registerForm" (ngSubmit)="register()">
+                            <div class="form-row">
+                                <input type="text" required class="form-control" formControlName="fullname" placeholder="Full Name">
+                                <div class="alert" role="alert" *ngIf="fullName.invalid && fullName.touched">
+                                  <span *ngIf="fullName.errors.required">Full Name is required</span>
+                                  <span *ngIf="fullName.errors.maxlength">Maximum characters is 30</span>
+                                  <span *ngIf="fullName.errors.minlength">Minimum characters is 3</span>
+                                  <span *ngIf="fullName.errors.pattern">Invalid characters only</span>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input type="password" required class="form-control" formControlName="confirmpassword" placeholder="Confirm Password">
+                            <div class="form-row">
+                              <input type="email" required class="form-control" formControlName="email" placeholder="Email Address">
+                              <div class="alert" role="alert" *ngIf="email.invalid && email.touched">
+                                <span *ngIf="email.errors.required">Email Address is required</span>
+                                <span *ngIf="email.errors.email">Invalid Email Address</span>
+                              </div>
                             </div>
-                          </div>
-                          <div>
-                            <p>By clicking Sign Up, you agree to AfriHow's <a href="#" routerLink="/terms">Terms of Use</a> & <a href="#" routerLink="/privacy">Privacy Policies</a></p>
-                          </div>
-                          <div class="form-row mt-2">
-                              <div class="col-md-6"><p>Already a user? <a href="#" routerLink="/login">Sign In</a></p></div>
-                              <!-- <div class="col-md-6"><button (click)="onClickSubmit()" class="btn btn-info btn-login pull-right pl-4 pr-4">Continue</button></div> -->
-                              <div class="col-md-6"><input type="submit" [disabled]="registerForm.invalid" class="btn btn-info btn-login pull-right pl-4 pr-4" value="Continue"></div>
-                          </div>
-                      </form>
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                  <input type="password" required class="form-control" formControlName="password" placeholder="Password">
+                                  <div class="alert" role="alert" *ngIf="password.invalid && password.touched">
+                                    <span *ngIf="password.errors.required">Password  is required</span>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <input type="password" required class="form-control" formControlName="confirmpassword" placeholder="Confirm Password">
+                                  <div class="alert" role="alert" *ngIf="confirmPassword.invalid && confirmPassword.touched">
+                                    <span *ngIf="confirmPassword.errors?.required">Confirm Password is required</span>
+                                    <span *ngIf="confirmPassword.errors?.equalTo">Password does not match </span>
+                                  </div>
+                              </div>
+                            </div>
+                            <div>
+                              <p>By clicking Sign Up, you agree to AfriHow's <a href="#" routerLink="/terms">Terms of Use</a> & <a href="#" routerLink="/privacy">Privacy Policies</a></p>
+                            </div>
+                            <div class="form-row mt-2">
+                                <div class="col-md-6"><p>Already a user? <a href="#" routerLink="/login">Sign In</a></p></div>
+                                <div class="col-md-6"><button type="submit" [disabled]="getDisableRegisterState" class="btn btn-info btn-login pull-right pl-4 pr-4">
+                                  Continue</button></div>
+                                <!-- <div class="col-md-6"><input type="submit" [disabled]="getDisableRegisterState" class="btn btn-info btn-login pull-right pl-4 pr-4" value="Continue"></div> -->
+                            </div>
+                        </form>
+                      </div>
                   </div>
               </div>
           </div>

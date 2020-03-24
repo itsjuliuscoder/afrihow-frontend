@@ -1,17 +1,17 @@
 export interface RegisterInterface {
-  fullname: string;
+  fullName: string;
   email: string;
   password: string;
 }
 
 export interface LoginInterface {
-  email: string;
+  username: string;
   password: string;
 }
 
 
 export interface UserUpdate {
-  fullname: string;
+  fullName: string;
   password: string;
   about: string;
   profileImg;

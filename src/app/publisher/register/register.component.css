@@ -46,7 +46,7 @@
   margin: 1em auto;
   padding: 22px;
 }
-.login-wrapper .card .card-body form input[type="submit"]{
+.login-wrapper .card .card-body form button.btn-login{
   background-color: #5AB41D;
   font-weight: 700;
   border: none;
@@ -57,7 +57,7 @@
   background-color: #5AB41D;
   font-weight: 700;
   border: none;
-  padding: 9px;
+  padding: 9px !important;
 }
 .login-wrapper .card .card-body form button.btn-login:hover {
   background-color: #295508 !important;;

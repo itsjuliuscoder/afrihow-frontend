@@ -11,15 +11,16 @@ import Swal from 'sweetalert2';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   authType = '';
   registerErr = false;
   loginErr = false;
+  loginErrorMsg;
   public registerForm: FormGroup;
   public loginForm: FormGroup;
-  public forgetPasswordForm: FormGroup;
-  isRegister = true;
+  isRegister = false;
   isLogin = false;
   errMessage;
   resendResponse;
@@ -47,6 +48,10 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  clearLoginErr() {
+    this.loginErr = false;
+  }
+
   loginFormField(){
     this.loginForm = new FormGroup({
         loginEmail: new FormControl('', [Validators.required, CustomValidators.email]),
@@ -60,7 +65,7 @@ export class LoginComponent implements OnInit {
   login() {
     if (this.loginForm.valid) {
       const payload = {
-        email: this.loginEmail.value,
+        username: this.loginEmail.value,
         password: this.loginPassword.value
       };
       this.resetField();
@@ -70,10 +75,11 @@ export class LoginComponent implements OnInit {
           this.getDisableBtn(false);
           this.router.navigate(['/dashboard']);
         }, err => {
-          if (err.code === 412){
+          if (err.code === 400) {
             this.getSweetAlert('', 'warning', err.msg, 'login');
           } else {
             this.loginErr = true;
+            this.loginErrorMsg = err.error.data.msg;
           }
           this.getDisableBtn(false);
         }
@@ -86,8 +92,8 @@ export class LoginComponent implements OnInit {
     this.registerErr = null;
   }
 
-  private getDisableBtn(value: boolean){ this.disableBtn = value; }
-  get getDisableLoginStatus() { return this.loginForm.invalid || this.disableBtn; }
+  private getDisableBtn(value: boolean) { this.disableBtn = value; }
+  get getDisableLoginState() { return this.loginForm.invalid || this.disableBtn; }
 
   getSweetAlert(title, type, text, route ) {
     const swalWithBootstrapButtons = Swal.mixin({

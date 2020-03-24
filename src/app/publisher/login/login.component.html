@@ -13,19 +13,39 @@
                       <div class="login_img">
                           <img src="../../../../assets/afrihow_sm.jpg" class="img-fluid" alt="AfriHow Logo">
                       </div>
-                      <form [formGroup]="loginForm">
+                      <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="alert alert-danger" role="alert" *ngIf="loginErr">
+                          <button aria-label="Close" class="close ng-star-inserted" (click)="clearLoginErr()" type="button"><span aria-hidden="true">×</span></button>{{loginErrorMsg}}
+                        </div>
                           <div>
-                              <input type="email" required class="form-control" formControlName="email" placeholder="Email Address">
+                              <input type="email" required class="form-control" formControlName="loginEmail" placeholder="Email Address">
+                              <div class="alert" role="alert" *ngIf="loginEmail.invalid && loginEmail.touched">
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginEmail.errors.required">First Name is required</span>
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginEmail.errors.maxlength">Maximum characters is 30</span>
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginEmail.errors.minlength">Minimum characters is 5</span>
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginEmail.errors.pattern">Invalid characters only</span>
+                              </div>
                           </div>
                           <div>
-                              <input type="password" required class="form-control" formControlName="password" placeholder="Password">
+                              <input type="password" required class="form-control" formControlName="loginPassword" placeholder="Password">
+                              <div class="alert" role="alert" *ngIf="loginPassword.invalid && loginPassword.touched">
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginPassword.errors.required">First Name is required</span>
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginPassword.errors.maxlength">Maximum characters is 30</span>
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginPassword.errors.minlength">Minimum characters is 5</span>
+                                <span style="color: red; margin-top: 1px;" *ngIf="loginPassword.errors.pattern">Invalid characters only</span>
+                              </div>
                           </div>
                           <div>
                             <a href="#" routerLink="/reset-password">Forgot Password?</a>
                           </div>
                           <div class="form-row mt-4">
                               <div class="col-md-7"><p>New to AfriHow? <a href="#" routerLink="/register">Create Account</a></p></div>
-                              <div class="col-md-5"><input type="submit" class="btn btn-info btn-login pull-right pl-4 pr-4" value="Login"></div>
+                              <div class="col-md-5">
+                                <button type="submit" [disabled]="getDisableLoginState" class="btn btn-login btn-info">
+                                  <i *ngIf="disableBtn" class="fa fa-spinner fa-spin"></i>
+                                  Continue
+                                </button>
+                              </div>
                           </div>
                       </form>
                   </div>

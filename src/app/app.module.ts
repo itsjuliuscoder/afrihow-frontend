@@ -59,12 +59,9 @@ import { LearningBannerComponent } from './public/learning-hub/learning-banner/l
 import { LearningContentComponent } from './public/learning-hub/learning-content/learning-content.component';
 import { SupportBannerComponent } from './public/support/support-banner/support-banner.component';
 import { SupportContentComponent } from './public/support/support-content/support-content.component';
-import { LoginContentComponent } from './publisher/login/login-content/login-content.component';
-import { RegisterContentComponent } from './publisher/register/register-content/register-content.component';
 import { ContentComponent } from './page-not-found/content/content.component';
 import { BannerPageNotFoundComponent } from './page-not-found/banner-page-not-found/banner-page-not-found.component';
 import { ForgotPasswordComponent } from './publisher/forgot-password/forgot-password.component';
-import { ForgotPasswordContentComponent } from './publisher/forgot-password/forgot-password-content/forgot-password-content.component';
 import { PublisherComponent } from './publisher/publisher.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpService } from './http.service';
@@ -133,12 +130,9 @@ import { ExploreComponent } from './public/explore/explore.component';
     LearningContentComponent,
     SupportBannerComponent,
     SupportContentComponent,
-    LoginContentComponent,
-    RegisterContentComponent,
     ContentComponent,
     BannerPageNotFoundComponent,
     ForgotPasswordComponent,
-    ForgotPasswordContentComponent,
     PublisherComponent,
     WelcomeComponent,
     FaqsComponent,

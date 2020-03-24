@@ -23,15 +23,7 @@ export class HttpService {
   };
   // url = `${environment.baseUrl}/xttreme/auth`;
 
-  constructor(private http: HttpClient) {
-    // this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
-    // this.currentUser = this.currentUserSubject.asObservable();
-  }
-
-  public get currentUserValue(): any {
-    return 'I am subject';
-    // return this.currentUserSubject.value;
-  }
+  constructor(private http: HttpClient) {  }
 
   // register
   register(data: RegisterInterface) {
